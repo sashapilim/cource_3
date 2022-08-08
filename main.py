@@ -10,6 +10,7 @@ app.register_blueprint(post_blueprint)
 app.register_blueprint(bluepint_api)
 
 
+
 @app.errorhandler(404)
 def page_error_404(error):
     return f"Такой страницы нет {error}", 404
@@ -19,7 +20,6 @@ def page_error_404(error):
 def page_error_500(error):
     return f"На сервере ошибка - {error}", 500
 
-# response = app.test_client().get('/api/posts')
-# print(response.status_code)
+
 if __name__ == "__main__":
     app.run(debug=True)
