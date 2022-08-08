@@ -1,8 +1,8 @@
 from flask import Blueprint, jsonify
 import logging
 
-from coursework2_source.loggings import logger_api
-from coursework2_source.posts.views import post_dao
+from project.loggings import logger_api
+from project.posts.views import post_dao
 
 bluepint_api = Blueprint("bluepint_api", __name__)
 

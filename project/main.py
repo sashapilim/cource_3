@@ -1,7 +1,7 @@
 from flask import Flask
 
-from coursework2_source.api.views import bluepint_api
-from coursework2_source.posts.views import post_blueprint
+from project.api.views import bluepint_api
+from project.posts.views import post_blueprint
 
 app = Flask(__name__)
 app.config['JSON_AS_ASCII'] = False

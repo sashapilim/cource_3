@@ -2,7 +2,7 @@ from flask import Blueprint, render_template, request
 
 from .dao.comments_dao import Comments_dao
 from .dao.posts_dao import PostDAO
-from ..config import DATA_PATH_POSTS, data_path_comments
+from project.config import DATA_PATH_POSTS, data_path_comments
 
 post_blueprint = Blueprint("post_blueprint", __name__, template_folder="templates")
 
