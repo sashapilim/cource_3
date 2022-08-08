@@ -20,12 +20,12 @@ class Test_api:
         return test_client
 
     def test_index(self,app_instance):
-        result = app_instance.get("/api/", follow_redirects=True)
+        result = app_instance.get("/api", follow_redirects=True)
 
         assert result.status_code == 200, "Неправильный статус "
 
     def test_post_page(self,app_instance):
-        result = app_instance.get("/api/posts/", follow_redirects=True)
+        result = app_instance.get("/api/posts", follow_redirects=True)
         assert result.status_code==200,"Неправильный статус "
 
 
